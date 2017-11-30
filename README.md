@@ -24,12 +24,11 @@ echo ".docker" >> .git/info/exclude
 
 # On the first run, build the `workspace` image we'll work from.
 # The workspace is based on PHP 7.1 + PHP-FPM.
-# It installs things like NodeJS, npm, yarn, etc.
-# 
-# This does NOT deploy the application. That is YOUR job after 
-# all containers have started. You'll need a shell...
+# It installs things like Composer, NodeJS, npm, yarn, etc.
 ./cfp build
 
+# This does NOT deploy the application. That is YOUR job after 
+# all containers have started. You'll need a shell.
 # To get a shell to the `workspace` container...
 ./cfp shell
 
