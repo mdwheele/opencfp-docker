@@ -5,6 +5,24 @@ This repository is meant to be a Docker-based development environment for OpenCF
 ## Manual
 
 ```bash
+# Preparations
+# ============
+# 
+# Go into your clone of OpenCFP
+cd /path/to/opencfp
+#
+# Clone this project (or your fork of it) into a folder .docker
+git clone https://github.com/mdwheele/opencfp-docker.git .docker
+#
+# Add the new folder to your repos ignored folder list
+echo .docker >> .git/info/exclude
+#
+# and then move into the .docker folder to go on
+cd .docker
+
+# Usage
+# =====
+#
 # You'll use the `cfp` shell to interact with the Docker 
 # environment
 ./cfp
